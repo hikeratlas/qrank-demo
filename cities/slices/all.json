@@ -1,1 +1,28 @@
-../../all.json
+{
+    "layers": {
+        "boundaries": {
+            "zindex": 1,
+            "minzoom": 6,
+            "maxzoom": 10,
+            "simplify_below": 10,
+            "simplify_level": 0.0002
+        },
+        "places": {
+            "zindex": 2,
+            "minzoom": 6,
+            "maxzoom": 10
+        }
+    },
+    "settings": {
+        "minzoom": 6,
+        "maxzoom": 10,
+        "basezoom": 10,
+        "compress": "gzip",
+        "include_ids": false,
+        "combine_below": 10,
+        "name": "qrank demo",
+        "version": "1.0",
+        "description": "Demo of qrank",
+        "compress": "gzip"
+    }
+}

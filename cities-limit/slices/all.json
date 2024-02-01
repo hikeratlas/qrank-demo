@@ -4,13 +4,15 @@
             "zindex": 1,
             "minzoom": 6,
             "maxzoom": 10,
-            "simplify_below": 12,
+            "simplify_below": 10,
             "simplify_level": 0.0002
         },
         "places": {
             "zindex": 2,
             "minzoom": 6,
-            "maxzoom": 10
+            "maxzoom": 10,
+            "feature_limit": 5,
+            "feature_limit_below": 10
         }
     },
     "settings": {
@@ -19,7 +21,7 @@
         "basezoom": 10,
         "compress": "gzip",
         "include_ids": false,
-        "combine_below": 14,
+        "combine_below": 10,
         "name": "qrank demo",
         "version": "1.0",
         "description": "Demo of qrank",
