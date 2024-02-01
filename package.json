@@ -1,0 +1,14 @@
+{
+  "name": "qrank-demo",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "mapt": "https://github.com/cldellow/mapt.git"
+  }
+}
