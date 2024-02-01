@@ -18,5 +18,7 @@ function relation_scan_function()
 end
 
 function relation_function()
-	Layer('boundaries')
+	if Find('boundary') == 'administrative' and Find('admin_level') == '4' then
+		Layer('boundaries')
+	end
 end
