@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -euo pipefail
+
+for x in cities*; do
+	(
+		pushd $x
+		bun mapt build ~/Downloads/washington-latest.osm.pbf
+		r2cmd put all.pmtiles s3://hikes-public/blog/cartgen1/$x.pmtiles --force
+		bun mapt style https://public.hikeratlas.com/blog/cartgen1/$x.pmtiles > /tmp/style.json
+		r2cmd put /tmp/style.json s3://hikes-public/blog/cartgen1/$x.json --force
+	)
+done

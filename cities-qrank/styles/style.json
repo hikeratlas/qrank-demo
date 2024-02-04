@@ -1,0 +1,19 @@
+{
+  "version": 8,
+  "id": "root-style",
+  "name": "root-style",
+  "metadata": {
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "glyphs": "https://public.hikeratlas.com/fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://raw.githubusercontent.com/hikeratlas/sprites/main/output/sprite",
+  "sources": {
+  },
+  "layers": [
+    {
+      "id": "background-0",
+      "type": "background",
+      "paint": {"background-color": "zinc-100"}
+    }
+  ]
+}
